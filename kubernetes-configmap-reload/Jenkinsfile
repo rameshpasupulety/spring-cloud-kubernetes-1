@@ -1,4 +1,4 @@
-@Library('jenkins-shared-library@main') _
+//@Library('jenkins-shared-library@main') _
 pipeline {
 
   agent any
@@ -12,7 +12,8 @@ pipeline {
   }
       
   tools{ 
-        maven 'maven3'
+        maven 'Maven 3.9.0'
+        jdk 'Java 17.0.4.1'
     }
     stages {
         stage('Git-Checkout') {
